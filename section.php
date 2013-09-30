@@ -47,7 +47,7 @@
 
 <?php
     $hash=$_POST["hash"];
-    $cfg = json_decode(file_get_contents($hash.".json"), true);
+    $cfg = json_decode(file_get_contents("/tmp/".$hash.".json"), true);
     unlink($hash.".json");
     
     
@@ -107,7 +107,7 @@
     $text=array("file"=>implode("\n",$file),"name"=>$name);
     
     $hash=md5(serialize($text));
-    file_put_contents($hash.".json",json_encode($text));
+    file_put_contents("/tmp/".$hash.".json",json_encode($text));
     
 ?>
 

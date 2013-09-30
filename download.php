@@ -1,7 +1,7 @@
 <?php
 
     $hash=$_POST["hash"];
-    $cfg = json_decode(file_get_contents($hash.".json"), true);
+    $cfg = json_decode(file_get_contents("/tmp/".$hash.".json"), true);
     unlink($hash.".json");
     $filename = $cfg["name"];
     $file = $cfg["file"];

@@ -160,7 +160,7 @@ else
   
   $hash=md5(serialize($cfg));
   $arr1 = array ('a'=>1,'b'=>2,'c'=>3,'d'=>4,'e'=>5);
-  file_put_contents($hash.".json",json_encode($cfg));
+  file_put_contents("/tmp/".$hash.".json",json_encode($cfg));
   
   
   $sectios=array();
