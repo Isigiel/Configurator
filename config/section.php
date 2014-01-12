@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
@@ -120,7 +119,7 @@
 <div class="row"><div class="large-12 columns"><div class="panel">
 <div class"panel">
 <h3>New raw file</h3>
-<p><?php echo $text["file"]; ?></p>
+<p><?php echo nl2br($text["file"]); ?></p>
 </div></div></div>
 <div class="row"><div class="large-12 collumns">
 <form method="post" action="download.php">
